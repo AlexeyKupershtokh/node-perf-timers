@@ -7,12 +7,12 @@ var handler = function(p) {
     for (var j = 0, l = p.length; j < l; j++) {
         x++;
 		var i = p[j];
-		t.setTimeout(i, i % 5000 + 1);
+		t.setTimeout(i, i % 1000 + 1);
 	}
 };
-var t = new perftimers(handler, 1);
-for (var i = 0; i < 5000000; i++) {
-	t.setTimeout(i, i % 5000 + 1);
+var t = new perftimers(handler, 10);
+for (var i = 0; i < 1000000; i++) {
+	t.setTimeout(i, i % 1000 + 1);
 }
 
 setInterval(function() {
