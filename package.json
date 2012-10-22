@@ -15,6 +15,9 @@
     "performance",
     "timers"
   ],
+  "dependencies": {
+    "perf-time": ">0"
+  },
   "author": "Alexey Kupershtokh",
   "license": "BSD"
 }
